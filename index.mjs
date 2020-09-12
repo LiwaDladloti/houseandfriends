@@ -8,7 +8,7 @@ const { renderFile } = ejs;
 
 var app = express();
 
-var port = 8000;
+var port = process.env.PORT || 8000;
 
 app.use(express.static('public'));
 
